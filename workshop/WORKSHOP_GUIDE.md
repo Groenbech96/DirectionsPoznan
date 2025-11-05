@@ -28,7 +28,11 @@ Welcome to the E-Document Integration Workshop! In this hands-on workshop, you'l
 
 ## Setup Instructions
 
-Before starting the exercises, you need to configure the E-Document service and connect to the Connector service.
+Before starting the exercises, you need to publish the apps. Both of them. Once you have them installed in your environment, you need to configure the E-Document service and connect to the Connector service.
+
+### Step 0: Publish apps
+
+1. Edit launch.json for both apps to publish them. You might need to change version depending on what version you are running.
 
 ### Step 1: Configure E-Document Service
 
