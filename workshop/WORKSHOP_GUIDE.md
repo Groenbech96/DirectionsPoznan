@@ -47,7 +47,7 @@ Before starting the exercises, you need to configure the E-Document service and 
 1. While still on the E-Document Service page, click **Service Integration Setup**
 2. The **Connector Connection Setup** page will open
 3. Fill in the following fields:
-   - **Service URL**: `https://directionsemea2025-b6aeebakc8fvf0bq.swedencentral-01.azurewebsites.net/`
+   - **API Base URL**: `https://directionsemea2025-b6aeebakc8fvf0bq.swedencentral-01.azurewebsites.net/`
    - **Service Key**: Click **Register** to get a new service key, or enter your existing key
    - **User Name**: Your name or identifier. Make it unique
 4. Click **Test Connection** to verify the setup works
@@ -227,7 +227,7 @@ Set the API endpoint to call the `enqueue` endpoint.
 
 **Instructions**:
 1. Find the comment `// TODO: Set APIEndpoint text variable for request to 'enqueue' endpoint`
-2. Combine the base URL from `ConnectorSetup."Service URL"` with `enqueue`
+2. Combine the base URL from `ConnectorSetup."API Base URL"` with `enqueue`
 
 **Hint**: Use string concatenation
 
@@ -235,7 +235,7 @@ Set the API endpoint to call the `enqueue` endpoint.
 <summary>Solution</summary>
 
 ```al
-APIEndpoint := ConnectorSetup."Service URL" + 'enqueue';
+APIEndpoint := ConnectorSetup."API Base URL" + 'enqueue';
 ```
 </details>
 
@@ -313,7 +313,7 @@ In the `ReceiveDocuments` procedure, set the API endpoint to call the `peek` end
 <summary>Solution</summary>
 
 ```al
-APIEndpoint := ConnectorSetup."Service URL" + 'peek';
+APIEndpoint := ConnectorSetup."API Base URL" + 'peek';
 ```
 </details>
 
@@ -367,7 +367,7 @@ In the `DownloadDocument` procedure, set the API endpoint to call the `dequeue` 
 <summary>Solution</summary>
 
 ```al
-APIEndpoint := ConnectorSetup."Service URL" + 'dequeue';
+APIEndpoint := ConnectorSetup."API Base URL" + 'dequeue';
 ```
 </details>
 
@@ -531,7 +531,7 @@ Build and publish your extension. Then test importing:
 | Issue | Solution |
 |-------|----------|
 | Documents not sending | Check workflow is enabled and customer has correct sending profile |
-| Connection errors | Verify Service URL and Service Key in Connector setup |
+| Connection errors | Verify API Base URL and Service Key in Connector setup |
 | Documents not received | Ensure documents are in the queue (check API with `/peek`) |
 | Import fails | Check JSON format matches expected structure |
 | Vendor not found | Ensure vendor number exists in Business Central |
