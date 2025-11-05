@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Directions Connector">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 1262923982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Connector Connection Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Connector Connection Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1262923982 - Field 869913466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Base URL</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Connector Connection Setup - Field API Base URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1262923982 - Field 4253087169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Connector Connection Setup - Field API Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1262923982 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Connector Connection Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1262923982 - Field 856236780 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Registered</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Connector Connection Setup - Field Registered - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1262923982 - Field 129688762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Connector Connection Setup - Field User Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Connector Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Connection Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Control 869913466 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the base URL for the Connector API server (e.g., https://workshop-server.azurewebsites.net/)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Control API Base URL - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Control 4253087169 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the API key received after registration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Control API Key - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Control 4253087169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Control API Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Control 856236780 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Indicates whether you have successfully registered with the API</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Control Registered - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Control 129688762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the user name to register with the API</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Control User Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Action 4149417275 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Register with the Connector API to get an API key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Action Register - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Action 4149417275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Action Register - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Action 4263468516 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test the connection to the Connector API</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Action TestConnection - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1262923982 - Action 4263468516 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Connection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Connector Connection Setup - Action TestConnection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 2558810991 - EnumValue 3083306301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 1694972421">
+          <source>Connector</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Connector Integration - EnumValue Connector - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
