@@ -1,0 +1,40 @@
+name: Agent
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  # review:
+  #   runs-on: ubuntu-latest
+  #   name: 🤖 Multi-Agent PR Review
+  #   steps:
+
+  #     - name: Setup Python with UV
+  #       uses: ./.github/actions/setup-python-uv
+
+  #     - name: Install GitHub Copilot CLI
+  #       run: npm install -g @github/copilot
+
+  setup-cli:
+    env:
+      GH_TOKEN: ${{ secrets.GH_PAT }}
+    runs-on: ubuntu-latest
+    name: 🔧 Setup
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python with UV
+        uses: ./.github/actions/setup-python-uv
+
+      - name: Install GitHub Copilot CLI
+        run: npm install -g @github/copilot
+
+      - name: Run Python script with GitHub Copilot CLI
+        run: uv run ./.github/scripts/gh_cli_script.py
+      

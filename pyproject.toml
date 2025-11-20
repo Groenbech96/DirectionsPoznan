@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bcbench"
+version = "0.1.0"
+description = "Benchmarking tool for Business Central (AL) ecosystem, inspired by SWE-Bench"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Microsoft Corporation"}
+]
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    "jsonschema>=4.0",
+    "python-dotenv>=1.0",
+    "requests>=2.0",
+    "unidiff>=0.7",
+    "mini-swe-agent>=1.0.0",
+    "typer>=0.9.0",
+    "typing-extensions>=4.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+bcbench = "bcbench.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+bcbench = ["agent/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-v", "--strict-markers"]
+markers = [
+    "integration"
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 200
+
+[tool.ruff.lint]
+extend-select = [
+    "PLE",   # Pylint errors (includes __all__ validation)
+    "PLW",   # Pylint warnings (includes subprocess.run check requirement)
+    "I",     # isort (import sorting)
+    "UP",    # pyupgrade (modernize Python code)
+    "B",     # flake8-bugbear (find likely bugs)
+    "SIM",   # flake8-simplify (simplify code)
+    "C4",    # flake8-comprehensions (better list/dict comprehensions)
+    "PIE",   # flake8-pie (misc lints)
+    "RET",   # flake8-return (simplify return statements)
+    "PTH",   # flake8-use-pathlib (prefer pathlib over os.path)
+    "RUF",   # Ruff-specific rules
+    "TID252", # Ban relative imports
+]
+
+# Ignore specific rules that might be too aggressive
+ignore = [
+    "UP035",   # deprecated-import (typing.Dict, etc. still valid)
+    "PTH123",  # Allow open() for now, Path.open() migration can be gradual
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=7.0",
+    "ruff>=0.13.0",
+    "pre-commit>=4.3.0",
+    "ty>=0.0.1a25",
+]
