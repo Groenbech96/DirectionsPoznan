@@ -27,8 +27,6 @@ class AgentError(Exception):
     pass
 
 
-
-
 __all__ = ["Config", "get_config"]
 
 
